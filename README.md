@@ -92,7 +92,7 @@ Argumentów do wykorzystania w komendzie jest wiele, postaram Ci się przedstawi
 ## <a name="if_oraz_else">Czym jest `if` oraz `else`?</a>
 Wiele osób, które zaczynają swoją przygode z pisaniem skryptów, ma problem ze zrozumieniem, czym jest `if` oraz `else`. Postaram się to wyjaśnić poniżej:
 * `if`: Jest to w dosłownym tłumaczeniu na Polski **jeśli**. Domyślnie sprawdza czy dana wartość, zmienna itp. są `true` czy `false`
-* `else`: Jest przeciwieństwem `else`. Jego dosłowne tłumaczenie to **w przeciwnym razie**. Wykonuje się, jeżeli wartość `if` nie jest uzupełniona, lub gdy ustawiona jest na `false`
+* `else`: Jest przeciwieństwem `if`. Jego dosłowne tłumaczenie to **w przeciwnym razie**. Wykonuje się, jeżeli wartość `if` nie jest uzupełniona, lub gdy ustawiona jest na `false`
 
 Przykład wykorzystania wraz z użyciem argumentu:
 
