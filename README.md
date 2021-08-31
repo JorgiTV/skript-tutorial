@@ -13,4 +13,27 @@ Aby zacząć swoją przygodę z pisaniem skryptów, należy pobrać odpowiednią
 ![1](img/1.PNG)
 
 ## Podstawowe komendy pluginu Skript
-- `/sk reload [all/(nazwa pliku)]` - Przeładowuje pliki twojego danego skryptu, lub wszystkich.
+- `/sk reload [all/(nazwa pliku)]` - Przeładowuje pliki twojego danego skryptu, lub wszystkich dostępnych na twoim serwerze (W przypadku posiadania większj ilości skryptów, zalecane jest przeładowywanie ich pojedyńczo). Załóżmy, że posiadasz skrypt o nazwie `test.sk`, aby go przeładować użyjesz komendy `/sk reload test` lub `/sk reload test.sk`
+
+- `/sk disable (nazwa pliku)` - Pozwala wyłączyć dany skrypt, jeżeli jest on włączony. Dzięki tej funkcji, można wyłączyć tymczasowo dany skrypt w tym jego wszyskie funkcje.
+
+- `/sk enable (nazwa pliku)` - Pozwala włączyć dany skrypt, jeżeli jest on wyłączony. Aby rozpoznać, czy skrypt jest wyłączony z poziomu plików, należy zobaczyć czy posiada przed swoją nazwą `-` przykładowo `-test.sk`. Jeżeli prawidłowo wpiszesz komende `-` powinien zniknąć, a nazwa powinna wyglądać tak: `test.sk`
+
+## Jak stworzyć swój pierwszy skrypt?
+Aby stworzyć swój pierwszy skrypt należy w ścieżce `/plugins/Skript/scripts` stworzyć plik o nazwie i rozszerzeniu `twojanazwa.sk`, a nastepnie wejść do niego. Najważniejszą informacją, którą zawsze musisz pamiętać, to poprawne **TAB'owanie** skryptu. Jest ono niezbędne podczas pisania. Możesz użyć również **4 spacji = TAB** lecz nie jest to wygodne. Przejdźmy już do docelowego pisania skryptu, który będzie wyglądał tak:
+
+```java
+command /test:
+  trigger:
+    send "Hello world!"
+```
+
+Zastanwiasz się co do czego służy? Już to tłumacze:
+
+* **command**: Jest to główna struktura, dzięki niej możesz stworzyć swoją własną komendę
+* **trigger**: Jest on wyznacznikiem dla kodu, po którym zaczyna sie jego działanie
+* **send**: Funkcja wysyłania wiadomości na chacie, jej treść musi znajdować się w ""
+
+Efekt finalny po zapisaniu skryptu `Ctrl + S`, przeładowaniu go komendą `/sk reload nazwaskryptu` oraz wpisaniu komendy `/test` prezentuje się tak:
+
+![2](img/2.PNG)
