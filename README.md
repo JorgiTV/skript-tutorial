@@ -13,7 +13,7 @@ Aby zacząć swoją przygodę z pisaniem skryptów, należy pobrać odpowiednią
 ![1](img/1.PNG)
 
 ## Podstawowe komendy pluginu Skript
-- `/sk reload [all/(nazwa pliku)]` - Przeładowuje pliki twojego danego skryptu, lub wszystkich dostępnych na twoim serwerze (W przypadku posiadania większj ilości skryptów, zalecane jest przeładowywanie ich pojedyńczo). Załóżmy, że posiadasz skrypt o nazwie `test.sk`, aby go przeładować użyjesz komendy `/sk reload test` lub `/sk reload test.sk`
+- `/sk reload [all/(nazwa pliku)]` - Przeładowuje pliki twojego danego skryptu, lub wszystkie dostępnych na twoim serwerze (W przypadku posiadania większej ilości skryptów, zalecane jest przeładowywanie ich pojedyńczo). Załóżmy, że posiadasz skrypt o nazwie `test.sk`, aby go przeładować użyjesz komendy `/sk reload test` lub `/sk reload test.sk`
 
 - `/sk disable (nazwa pliku)` - Pozwala wyłączyć dany skrypt, jeżeli jest on włączony. Dzięki tej funkcji, można wyłączyć tymczasowo dany skrypt w tym jego wszyskie funkcje.
 
@@ -34,6 +34,9 @@ Zastanwiasz się co do czego służy? Już to tłumacze:
 * **trigger**: Jest on wyznacznikiem dla kodu, po którym zaczyna sie jego działanie
 * **send**: Funkcja wysyłania wiadomości na chacie, jej treść musi znajdować się w ""
 
-Efekt finalny po zapisaniu skryptu `Ctrl + S`, przeładowaniu go komendą `/sk reload nazwaskryptu` oraz wpisaniu komendy `/test` prezentuje się tak:
+Gratulacje! Napisałeś swój pierwszy skrypt! Efekt finalny po zapisaniu skryptu `Ctrl + S`, przeładowaniu go komendą `/sk reload nazwaskryptu` oraz wpisaniu komendy `/test` prezentuje się tak:
 
 ![2](img/2.PNG)
+
+## Dodatkowe elementy komend
+Jeżeli stworzyłeś już swoją pierwszą komendę, warto jest zapoznać się z przydatnymi funkcjami, które są widoczne poniżej:
