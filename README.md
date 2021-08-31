@@ -38,5 +38,18 @@ Gratulacje! Napisałeś swój pierwszy skrypt! Efekt finalny po zapisaniu skrypt
 
 ![2](img/2.PNG)
 
-## Dodatkowe elementy komend
+## Podstawowe funkcje komendy
 Jeżeli stworzyłeś już swoją pierwszą komendę, warto jest zapoznać się z przydatnymi funkcjami, które są widoczne poniżej:
+
+```java
+command /test:
+  aliases: pierwszakomenda, pa
+  permission: twoja.permisja
+  permission message: "Komunikat informujący o tym, że gracz nie ma permisji"
+  trigger:
+    send "Hello world!"
+```
+
+* **aliases**: Dzięki tej funkcji, możesz uzyskać dodatkowe komendy z tą samą funkcji, bez konieczności powielania jej.
+* **permission**: Funkcja ta, pozwala ustawić permisje do twojej komendy
+* **permission message**: Pozwala ustawić wiadomość, dotyczącą o braku permisji do danej komendy
