@@ -123,3 +123,5 @@ command /test:
   trigger:
     send "%{twojazmienna}%"
 ```
+
+**PORADNIK JEST W WERSJI ROBOCZEJ!**
