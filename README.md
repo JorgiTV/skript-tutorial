@@ -53,3 +53,30 @@ command /test:
 * **aliases**: Dzięki tej funkcji, możesz uzyskać dodatkowe komendy z tą samą funkcji, bez konieczności powielania jej.
 * **permission**: Funkcja ta, pozwala ustawić permisje do twojej komendy
 * **permission message**: Pozwala ustawić wiadomość, dotyczącą o braku permisji do danej komendy
+
+## Czym jest argument?
+Argument to treść wpisywana po twojej komendzie. Przykładowo:
+* Komenda z argumentem `/test tresc1`
+* W tym przypadku `tresc1` jest twoim `arg 1 (Pierwszym argumentem)`
+
+Taka sama sytuacja będzie przy komendzie `/test tresc1 tresc2 tresc3`:
+* W tym przypadku `tresc1, tresc2, tresc3` jest twoim `arg 1, arg 2, arg3 (Pierwszym, drugim, trzecim argumentem)`
+
+A więc prztestujemy to w praktyce. Aby wprowadzić argument do komendy, należy dodać `[<text>]`:
+
+```java
+command /test [<text>]:
+  trigger:
+    send "Hello world!"
+```
+
+Forma `[<text>]` nie jest jedynym argumentem, jest ich wiele co postaram się przedstawić w wątku niżej.
+
+## Rodzaje argumentów
+Argumentów do wykorzystania w komendzie jest wiele, postaram Ci się przedstawić najbardziej przydatne:
+* `[<text>]`: Jest on argumentem tekstowym. Najbardziej uniwersalny argument jakiego można użyć w komendzie.
+* `[<player>]`: Argument ten przeznaczony jest dla nicków graczy którzy są online.
+* `[<integer>]`: Wykorzystywany jest do komend, które korzystają z liczb całkowitych
+
+## Czym jest `if` oraz `else`?
+Wiele osób, które zaczynają swoją przygode z pisaniem skryptów, ma problem ze zrozumieniem, czym jest `if` oraz `else`. Postaram się to wyjaśnić poniżej:
