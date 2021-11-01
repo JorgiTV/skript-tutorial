@@ -1,6 +1,6 @@
 # 🌵 Podstawy pisania skryptów
 
-> Witaj, w tym poradniku przedstawie Ci podstawy pisania skryptów. Jeżeli potrzebujesz pomocy, napisz do mnie na discord `JorgiTV#0177` Jeżeli uważasz, że nie ma w poradniku jakieś ważnej funkcji? Napisz do mnie, a ja postaram się ją dodać!
+> Witaj, w tym poradniku przedstawie Ci podstawy pisania skryptów. Jeżeli potrzebujesz pomocy, napisz do mnie na discord `JorgiTV#0177` Jeżeli uważasz, że nie ma w poradniku jakieś ważnej funkcji? Napisz do mnie, a ja postaram się ją dodać! (Najpierw przeczytaj cały poradnik!)
 
 ## Spis treści
 * [Wprowadzenie do Skript'a](#wprowadzenie_do_skript)
