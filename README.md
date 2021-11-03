@@ -1,6 +1,6 @@
 # 🌵 Podstawy pisania skryptów
 
-> Witaj, w tym poradniku przedstawie Ci podstawy pisania skryptów. Jeżeli potrzebujesz pomocy, napisz do mnie na discord `JorgiTV#0177` Jeżeli uważasz, że nie ma w poradniku jakieś ważnej funkcji? Napisz do mnie, a ja postaram się ją dodać! (Najpierw przeczytaj cały poradnik!)
+> Witaj, w tym poradniku przedstawie Ci podstawy pisania skryptów. Jeżeli potrzebujesz pomocy, napisz do mnie na discord `JorgiTV#0177` Jeżeli uważasz, że nie ma w poradniku jakiejś ważnej funkcji? Napisz do mnie, a ja postaram się ją dodać! (Najpierw przeczytaj cały poradnik!)
 
 ## Spis treści
 * [Wprowadzenie do Skript'a](#wprowadzenie_do_skript)
@@ -14,7 +14,7 @@
 * [Czym są zmienne?](#czym_sa_zmienne)
 
 ## 🏓 <a name="wprowadzenie_do_skript">Wprowadzenie do Skript'a</a>
-Skript jest dobry dla początkujących osób. Jest on alternatywą języka Java, którego w minecraft'cie wykorzystujemy m. in. do pisania pluginów. Całą dokumentację Skripta znajdziesz **[tutaj](https://skriptlang.github.io/Skript/index.html)**. Przydatna w pisaniu skryptów jest znajomość języka angielskiego. Podczas pisania skryptów używa się go praktycznie cały czas. Każdy skrypt zapisywany jest w formacie `.sk`, a następnie jest on czytany przez język Java. Niestety, skrypty nie są tak wydajne jak pluginy, dlatego więszkość użytkowników nie zaleca ich używania. Jednakże, sądzę, że skrypty są dobrym rozwiązaniem na początek przygody z "programowaniem".
+Skript jest dobry dla początkujących osób. Jest on alternatywą języka Java, którego w minecraft'cie wykorzystujemy m.in. do pisania pluginów. Całą dokumentację Skripta znajdziesz **[tutaj](https://skriptlang.github.io/Skript/index.html)**. Przydatna w pisaniu skryptów jest znajomość języka angielskiego. Podczas pisania skryptów używa się go praktycznie cały czas. Każdy skrypt zapisywany jest w formacie `.sk`, a następnie jest on czytany przez język Java. Niestety, skrypty nie są tak wydajne jak pluginy, dlatego więszkość użytkowników nie zaleca ich używania. Jednakże, sądzę, że skrypty są dobrym rozwiązaniem na początek przygody z "programowaniem".
 
 ## 🔮 <a name="co_zrobic_aby_zaczac">Co zrobić aby, zacząć pisać skrypty?</a>
 Aby zacząć pisać skrypty, należy zaopatrzeć się w odpowiedni program. Możesz używać domyślnego notatnika, lecz na dłuższą metę, nie będzie on wygodny. Najwygodniejszym programem do pisania na początek jest **[SkIDE](https://skide.liz3.net/)**. Jest on programem, które oferuje podświetlanie składni skrypta, oraz automatyczne uzupełnianie. Program pozwala również dodawanie dodatków zarejestrowanych w **Skript Hub**. Możesz również użyć innego zamiennika np. **[NotePad++](https://notepad-plus-plus.org/downloads/)**. Zalecane jest również wybranie systemu kodowania **UTF-8**, tak aby wszystko zapisałby się poprawnie.
@@ -31,7 +31,7 @@ Aby zacząć swoją przygodę z pisaniem skryptów, należy pobrać odpowiednią
 - `/sk enable (nazwa pliku)` - Pozwala włączyć dany skrypt, jeżeli jest on wyłączony. Aby rozpoznać, czy skrypt jest wyłączony z poziomu plików, należy zobaczyć czy posiada przed swoją nazwą `-` przykładowo `-test.sk`. Jeżeli prawidłowo wpiszesz komende `-` powinien zniknąć, a nazwa powinna wyglądać tak: `test.sk`
 
 ## 🛠️ <a name="jak_stworzyc_skrypt">Jak stworzyć swój pierwszy skrypt?</a>
-Aby stworzyć swój pierwszy skrypt należy w ścieżce `/plugins/Skript/scripts` stworzyć plik o nazwie i rozszerzeniu `twojanazwa.sk`, a nastepnie wejść do niego. Najważniejszą informacją, którą zawsze musisz pamiętać, to poprawne **TAB'owanie** skryptu. Jest ono niezbędne podczas pisania. Możesz użyć również **4 spacji = TAB** lecz nie jest to wygodne. Przejdźmy już do docelowego pisania skryptu, który będzie wyglądał tak:
+Aby stworzyć swój pierwszy skrypt należy w ścieżce `/plugins/Skript/scripts` stworzyć plik o nazwie i rozszerzeniu `twojanazwa.sk`, a następnie wejść do niego. Najważniejszą informacją, którą zawsze musisz pamiętać, to poprawne **TAB'owanie** skryptu. Jest ono niezbędne podczas pisania. Możesz użyć również **4 spacji = TAB** lecz nie jest to wygodne. Przejdźmy już do docelowego pisania skryptu, który będzie wyglądał tak:
 
 ```java
 command /test:
@@ -39,10 +39,10 @@ command /test:
     send "Hello world!"
 ```
 
-Zastanwiasz się co do czego służy? Już to tłumacze:
+Zastanawiasz się co do czego służy? Już to tłumaczę:
 
 * **command**: Jest to główna struktura, dzięki niej możesz stworzyć swoją własną komendę
-* **trigger**: Jest on wyznacznikiem dla kodu, po którym zaczyna sie jego działanie
+* **trigger**: Jest on wyznacznikiem dla kodu, po którym zaczyna się jego działanie
 * **send**: Funkcja wysyłania wiadomości na chacie, jej treść musi znajdować się w ""
 
 Gratulacje! Napisałeś swój pierwszy skrypt! Efekt finalny po zapisaniu skryptu `Ctrl + S`, przeładowaniu go komendą `/sk reload nazwaskryptu` oraz wpisaniu komendy `/test` prezentuje się tak:
@@ -73,7 +73,7 @@ Argument to treść wpisywana po twojej komendzie. Przykładowo:
 Taka sama sytuacja będzie przy komendzie `/test tresc1 tresc2 tresc3`:
 * W tym przypadku `tresc1, tresc2, tresc3` jest twoim `arg 1, arg 2, arg3 (Pierwszym, drugim, trzecim argumentem)`
 
-A więc przetestujemy to w praktyce. Aby wprowadzić argument do komendy, należy dodać `[<text>]`:
+A więc przetestujmy to w praktyce. Aby wprowadzić argument do komendy, należy dodać `[<text>]`:
 
 ```java
 command /test [<text>]:
@@ -108,11 +108,11 @@ command /test [<text>]:
 ## 🥊 <a name="czym_sa_zmienne">Czym są zmienne?</a>
 Zmienne to forma zapisywania danych. W skrypcie istnieje forma zmiennych:
 
-* **Zmianna globalna:** `{twojazmienna}` (Zmienne te zapisywane są w pliku `variables.csv` przez co, po restarcie serwera, dane nie zostaną utracone)
-* **Zmianna tymczasowa:** `{_twojazmienna}` (Te zmienne po zakończeniu polecenia zostają usuwane)
+* **Zmienna globalna:** `{twojazmienna}` (Zmienne te zapisywane są w pliku `variables.csv` przez co, po restarcie serwera, dane nie zostaną utracone)
+* **Zmienna tymczasowa:** `{_twojazmienna}` (Te zmienne po zakończeniu polecenia zostają usuwane)
 * **Zmienna grupowa:** `{twojazmienna::*}` (W tej zmiennej możesz przechowywać listy takie jak: lista graczy, przedmiotów itp.)
 
-Zmienne możesz odzielać symbolem `.` przykład `{twojazmienna.%player%}`, lecz zalecane używanie jest `{twojazmienna::%player%}`
+Zmienne możesz oddzielać symbolem `.` przykład `{twojazmienna.%player%}`, lecz zalecane używanie jest `{twojazmienna::%player%}`
 Jeżeli chcesz użyć zmiennej w skrypcie, wystarczy wpisać twoją zmienną w `%%` przykład `%{twojazmienna}%`
 
 ```java
